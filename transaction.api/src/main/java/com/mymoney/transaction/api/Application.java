@@ -41,7 +41,7 @@ public class Application {
 @RequiredArgsConstructor
 class CustomerControlle {
 
-  private final CustomerRepository customerRepository = null;
+  private final CustomerRepository customerRepository;
 
   @GetMapping("/customers")
   Flux<Customer> get() {
